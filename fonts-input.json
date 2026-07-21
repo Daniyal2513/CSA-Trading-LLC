@@ -1,0 +1,10 @@
+{
+  "fonts": [
+    { "family": "Exo 2", "style": "Regular" },
+    { "family": "Exo 2", "style": "Bold" },
+    { "family": "Exo 2", "style": "ExtraBold" },
+    { "family": "DM Sans", "style": "Light" },
+    { "family": "DM Sans", "style": "Regular" },
+    { "family": "DM Sans", "style": "Medium" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "description": "This sleek, minimalist one-page web application showcases CSA Trading LLC's digital marketing and web development services, emphasizing real-time insights and client success.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
