@@ -1182,8 +1182,8 @@ function Contact() {
             {/* Contact info */}
             <div className="space-y-4 pt-4">
               {[
-                { icon: '◉', label: 'Email', value: 'contact@csatrading.com' },
-                { icon: '◈', label: 'Location', value: 'Global · Remote-First Agency' },
+                { icon: '◉', label: 'Email', value: 'csatradingllc.dmu@gmail.com' },
+                { icon: '◈', label: 'Location', value: '16797 Mill Station WayDumfries, VA 22025' },
                 { icon: '▲', label: 'Response Time', value: 'Within 24 hours, guaranteed' },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-4">
