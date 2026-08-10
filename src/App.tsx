@@ -298,7 +298,7 @@ function Hero() {
                 Scale Your
               </span>
               <span
-                className="block text-5xl lg:text-7xl font-extrabold glow-cyan"
+                className="block text-5xl lg:text-7xl font-extrabold"
                 style={{ color: ' #207729', letterSpacing: '-0.02em', lineHeight: 1.05 }}
               >
                 Brand With
@@ -345,7 +345,7 @@ function Hero() {
               >
                 Get Started
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <path d="M2 7h10M8 3l4 4-4 4" stroke="#070b14" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 7h10M8 3l4 4-4 4" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </button>
 
