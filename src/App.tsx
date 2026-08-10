@@ -68,8 +68,8 @@ function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{
         background: scrolled
-          ? 'rgba(7, 11, 20, 0.92)'
-          : 'rgba(7, 11, 20, 0.4)',
+          ? 'rgba(255, 255, 255, 0.92)'
+          : 'rgba(255, 255, 255, 0.4)',
         backdropFilter: 'blur(20px)',
         WebkitBackdropFilter: 'blur(20px)',
         borderBottom: scrolled ? '1px solid rgba(0, 212, 255, 0.12)' : '1px solid transparent',
@@ -111,11 +111,11 @@ function Navbar() {
               style={{
                 fontFamily: "'DM Sans', sans-serif",
                 fontWeight: 400,
-                color: '#7a8499',
+                color: '#333333',
                 letterSpacing: '0.04em',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#e8edf5')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#7a8499')}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#000000')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = '#333333')}
             >
               {link}
             </a>
@@ -188,7 +188,7 @@ function Navbar() {
         <div
           className="md:hidden"
           style={{
-            background: 'rgba(7, 11, 20, 0.97)',
+            background: 'rgba(255, 255, 255, 0.97)',
             borderTop: '1px solid rgba(0, 212, 255, 0.1)',
             padding: '1.5rem 1.5rem',
           }}
@@ -199,7 +199,7 @@ function Navbar() {
                 key={link}
                 href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
                 className="text-sm"
-                style={{ fontFamily: "'DM Sans', sans-serif", color: '#7a8499' }}
+                style={{ fontFamily: "'DM Sans', sans-serif", color: '#333333' }}
                 onClick={() => setMenuOpen(false)}
               >
                 {link}
@@ -293,7 +293,7 @@ function Hero() {
             >
               <span
                 className="block text-5xl lg:text-7xl font-extrabold"
-                style={{ color: '#e8edf5', letterSpacing: '-0.02em', lineHeight: 1.05 }}
+                style={{ color: '#000000', letterSpacing: '-0.02em', lineHeight: 1.05 }}
               >
                 Scale Your
               </span>
@@ -305,7 +305,7 @@ function Hero() {
               </span>
               <span
                 className="block text-5xl lg:text-7xl font-extrabold"
-                style={{ color: '#e8edf5', letterSpacing: '-0.02em', lineHeight: 1.05 }}
+                style={{ color: '#000000', letterSpacing: '-0.02em', lineHeight: 1.05 }}
               >
                 Precision.
               </span>
@@ -313,7 +313,7 @@ function Hero() {
 
             <p
               className="text-lg max-w-md leading-relaxed"
-              style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#7a8499' }}
+              style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#333333' }}
             >
               CSA Trading LLC engineers high-performance digital marketing systems and
               world-class web experiences that convert traffic into measurable revenue.
@@ -355,7 +355,7 @@ function Hero() {
                   fontFamily: "'Exo 2', sans-serif",
                   fontWeight: 500,
                   letterSpacing: '0.06em',
-                  color: '#e8edf5',
+                  color: '#000000',
                   background: 'transparent',
                   padding: '14px 28px',
                   border: '1px solid rgba(255,255,255,0.12)',
@@ -368,7 +368,7 @@ function Hero() {
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'
-                  e.currentTarget.style.color = '#e8edf5'
+                  e.currentTarget.style.color = '#000000'
                 }}
               >
                 View Our Work
@@ -406,7 +406,7 @@ function Hero() {
               className="glass rounded-none p-6 relative overflow-hidden"
               style={{
                 border: '1px solid rgba(0, 212, 255, 0.2)',
-                background: 'rgba(13, 20, 34, 0.8)',
+                background: 'rgba(240, 240, 240, 0.8)',
                 backdropFilter: 'blur(20px)',
               }}
             >
@@ -472,7 +472,7 @@ function Hero() {
                   >
                     <div
                       className="text-xl font-bold mb-1"
-                      style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5' }}
+                      style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000' }}
                     >
                       {m.value}
                     </div>
@@ -509,7 +509,7 @@ function Hero() {
                     style={{
                       fontFamily: "'DM Sans', sans-serif",
                       fontWeight: 300,
-                      color: i === 0 ? '#7a8499' : '#3a4255',
+                      color: i === 0 ? '#333333' : '#3a4255',
                       animation: i === 0 ? 'slide-in-left 0.4s ease-out' : 'none',
                     }}
                   >
@@ -655,7 +655,7 @@ function About() {
               </div>
               <h2
                 className="text-4xl lg:text-5xl font-extrabold leading-tight mb-6"
-                style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5', letterSpacing: '-0.02em' }}
+                style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000'', letterSpacing: '-0.02em' }}
               >
                 Built for Brands
                 <br />
@@ -663,7 +663,7 @@ function About() {
               </h2>
               <p
                 className="text-base leading-loose mb-6"
-                style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#7a8499' }}
+                style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#333333' }}
               >
                 CSA Trading LLC was founded on one conviction: results are the only language
                 that matters in business. We combine data-driven marketing intelligence with
@@ -672,7 +672,7 @@ function About() {
               </p>
               <p
                 className="text-base leading-loose"
-                style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#7a8499' }}
+                style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#333333' }}
               >
                 Every strategy we deploy is backed by real-time analytics, tested assumptions,
                 and a team obsessed with scaling what works. We don't guess — we measure,
@@ -707,7 +707,7 @@ function About() {
                   <div className="text-lg mb-2" style={{ color: ' #207729' }}>{p.icon}</div>
                   <div
                     className="text-sm font-semibold mb-1"
-                    style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5' }}
+                    style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000' }}
                   >
                     {p.title}
                   </div>
@@ -778,7 +778,7 @@ function Services() {
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <h2
               className="text-4xl lg:text-5xl font-extrabold leading-tight"
-              style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5', letterSpacing: '-0.02em' }}
+              style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000', letterSpacing: '-0.02em' }}
             >
               Services Built to
               <br />
@@ -800,7 +800,7 @@ function Services() {
             className="md:col-span-2 p-8 group transition-all duration-300 cursor-pointer"
             style={{ background: '#070b14' }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.background = 'rgba(13, 20, 34, 1)'
+              (e.currentTarget as HTMLElement).style.background = 'rgba(245, 245, 245, 1)'
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLElement).style.background = '#070b14'
@@ -876,13 +876,13 @@ function ServiceCardContent({ service }: { service: { num: string; title: string
 
       <h3
         className="text-xl font-bold mb-3"
-        style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5', letterSpacing: '-0.01em' }}
+        style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000', letterSpacing: '-0.01em' }}
       >
         {service.title}
       </h3>
       <p
         className="text-sm leading-loose flex-1 mb-6"
-        style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#7a8499' }}
+        style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#333333' }}
       >
         {service.desc}
       </p>
@@ -1003,7 +1003,7 @@ function Testimonials() {
           </div>
           <h2
             className="text-4xl lg:text-5xl font-extrabold leading-tight"
-            style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5', letterSpacing: '-0.02em' }}
+            style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000', letterSpacing: '-0.02em' }}
           >
             Proof, Not Promises.
           </h2>
@@ -1026,7 +1026,7 @@ function Testimonials() {
             </div>
             <p
               className="text-lg leading-loose mb-8"
-              style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#e8edf5' }}
+              style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#000000' }}
             >
               {testimonials[active].quote}
             </p>
@@ -1046,7 +1046,7 @@ function Testimonials() {
                 <div>
                   <div
                     className="text-sm font-semibold"
-                    style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5' }}
+                    style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000' }}
                   >
                     {testimonials[active].name}
                   </div>
@@ -1081,7 +1081,7 @@ function Testimonials() {
                 onClick={() => setActive(i)}
                 className="p-5 text-left transition-all duration-200"
                 style={{
-                  background: active === i ? 'rgba(0, 212, 255, 0.06)' : 'rgba(13, 20, 34, 0.4)',
+                  background: active === i ? 'rgba(0, 212, 255, 0.06)' : 'rgba(240, 240, 240, 0.4)',
                   border: active === i ? '1px solid rgba(0, 212, 255, 0.3)' : '1px solid rgba(0, 212, 255, 0.08)',
                   cursor: 'pointer',
                 }}
@@ -1101,7 +1101,7 @@ function Testimonials() {
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
                     fontWeight: 300,
-                    color: active === i ? '#7a8499' : '#3a4255',
+                    color: active === i ? '#333333' : '#3a4255',
                   }}
                 >
                   {t.company}
@@ -1164,7 +1164,7 @@ function Contact() {
               </div>
               <h2
                 className="text-4xl lg:text-5xl font-extrabold leading-tight mb-6"
-                style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5', letterSpacing: '-0.02em' }}
+                style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000', letterSpacing: '-0.02em' }}
               >
                 Ready to Scale
                 <br />
@@ -1172,7 +1172,7 @@ function Contact() {
               </h2>
               <p
                 className="text-base leading-loose"
-                style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#7a8499' }}
+                style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#333333' }}
               >
                 Tell us about your brand and goals. We'll respond within 24 hours with a
                 preliminary analysis and a roadmap tailored specifically to your situation.
@@ -1206,7 +1206,7 @@ function Contact() {
                     </div>
                     <div
                       className="text-sm"
-                      style={{ fontFamily: "'DM Sans', sans-serif", color: '#7a8499' }}
+                      style={{ fontFamily: "'DM Sans', sans-serif", color: '#333333' }}
                     >
                       {item.value}
                     </div>
@@ -1229,13 +1229,13 @@ function Contact() {
                 <div className="text-4xl mb-4" style={{ color: ' #207729' }}>◎</div>
                 <h3
                   className="text-2xl font-bold mb-3"
-                  style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5' }}
+                  style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000' }}
                 >
                   Message Received.
                 </h3>
                 <p
                   className="text-sm"
-                  style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#7a8499' }}
+                  style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#333333' }}
                 >
                   We'll be in touch within 24 hours with your tailored analysis.
                 </p>
@@ -1266,7 +1266,7 @@ function Contact() {
                       style={{
                         fontFamily: "'DM Sans', sans-serif",
                         fontWeight: 300,
-                        color: '#e8edf5',
+                        color: '#000000',
                         background: 'rgba(13, 20, 34, 0.8)',
                         border: focused === key
                           ? '1px solid rgba(0, 212, 255, 0.5)'
@@ -1301,7 +1301,7 @@ function Contact() {
                     style={{
                       fontFamily: "'DM Sans', sans-serif",
                       fontWeight: 300,
-                      color: '#e8edf5',
+                      color: '#000000',
                       background: 'rgba(13, 20, 34, 0.8)',
                       border: focused === 'message'
                         ? '1px solid rgba(0, 212, 255, 0.5)'
@@ -1359,7 +1359,7 @@ function Footer() {
       className="relative pt-16 pb-8"
       style={{
         borderTop: '1px solid rgba(0, 212, 255, 0.1)',
-        background: 'rgba(7, 11, 20, 0.98)',
+        background: 'rgba(255, 255, 255, 0.98)',
       }}
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -1379,7 +1379,7 @@ function Footer() {
               </div>
               <span
                 className="text-sm font-bold tracking-widest"
-                style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5', letterSpacing: '0.16em' }}
+                style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000', letterSpacing: '0.16em' }}
               >
                 CSA<span style={{ color: ' #207729' }}>.</span>TRADING
               </span>
@@ -1435,7 +1435,7 @@ function Footer() {
                     href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
                     className="text-sm transition-all duration-150"
                     style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#3a4255', textDecoration: 'none' }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = '#7a8499')}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = '#333333')}
                     onMouseLeave={(e) => (e.currentTarget.style.color = '#3a4255')}
                   >
                     {link}
@@ -1502,7 +1502,7 @@ function Footer() {
                 href="#"
                 className="text-xs transition-all duration-150"
                 style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 300, color: '#3a4255', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#7a8499')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#333333')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = '#3a4255')}
               >
                 {link}
