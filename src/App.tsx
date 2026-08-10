@@ -81,7 +81,7 @@ function Navbar() {
           <div
             className="w-8 h-8 flex items-center justify-center"
             style={{
-              border: '1.5px solid rgba(0, 212, 255, 0.6)',
+              border: '1.5px solid #207729',
               background: 'rgba(183, 182, 182, 0.08)',
               clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
             }}
@@ -1370,12 +1370,12 @@ function Footer() {
               <div
                 className="w-7 h-7 flex items-center justify-center"
                 style={{
-                  border: '1.5px solid rgba(0, 212, 255, 0.5)',
+                  border: '1.5px solid #207729',
                   background: 'rgba(0, 212, 255, 0.06)',
                   clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
                 }}
               >
-                <span className="text-xs font-bold" style={{ fontFamily: "'Exo 2'", color: '#00d4ff' }}>C</span>
+                <span className="text-xs font-bold" style={{ fontFamily: "'Exo 2'", color: '#207729' }}>C</span>
               </div>
               <span
                 className="text-sm font-bold tracking-widest"
