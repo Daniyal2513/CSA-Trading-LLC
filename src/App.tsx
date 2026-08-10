@@ -857,7 +857,7 @@ function ServiceCardContent({ service }: { service: { num: string; title: string
       <div className="flex items-start justify-between mb-6">
         <span
           className="text-xs font-bold tracking-widest"
-          style={{ fontFamily: "'Exo 2', sans-serif", color: 'rgba(0, 212, 255, 0.3)', letterSpacing: '0.2em' }}
+          style={{ fontFamily: "'Exo 2', sans-serif", color: '#207729', letterSpacing: '0.2em' }}
         >
           {service.num}
         </span>
