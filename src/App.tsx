@@ -88,7 +88,7 @@ function Navbar() {
           >
             <span
               className="text-xs font-bold"
-              style={{ fontFamily: "'Exo 2', sans-serif", color: '#00d4ff', letterSpacing: '0.05em' }}
+              style={{ fontFamily: "'Exo 2', sans-serif", color: ' #207729', letterSpacing: '0.05em' }}
             >
               C
             </span>
@@ -97,7 +97,7 @@ function Navbar() {
             className="text-sm font-bold tracking-widest uppercase"
             style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5', letterSpacing: '0.18em' }}
           >
-            CSA<span style={{ color: '#00d4ff' }}>.</span>TRADING
+            CSA<span style={{ color: ' #207729' }}>.</span>TRADING
           </span>
         </a>
 
@@ -129,7 +129,7 @@ function Navbar() {
             fontFamily: "'Exo 2', sans-serif",
             fontWeight: 600,
             color: '#070b14',
-            background: '#00d4ff',
+            background: ' #207729',
             padding: '8px 20px',
             letterSpacing: '0.06em',
             border: 'none',
@@ -137,11 +137,11 @@ function Navbar() {
             clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)',
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.background = '#33dcff'
+            e.currentTarget.style.background = ' #207729'
             e.currentTarget.style.boxShadow = '0 0 24px rgba(0, 212, 255, 0.5)'
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.background = '#00d4ff'
+            e.currentTarget.style.background = ' #207729'
             e.currentTarget.style.boxShadow = 'none'
           }}
         >
@@ -154,28 +154,28 @@ function Navbar() {
         {/* Mobile burger */}
         <button
           className="md:hidden p-2"
-          style={{ color: '#00d4ff', background: 'none', border: 'none', cursor: 'pointer' }}
+          style={{ color: ' #207729', background: 'none', border: 'none', cursor: 'pointer' }}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <div className="flex flex-col gap-1.5 w-5">
             <span
               className="block h-px transition-all duration-200"
               style={{
-                background: '#00d4ff',
+                background: ' #207729',
                 transform: menuOpen ? 'rotate(45deg) translateY(5px)' : 'none',
               }}
             />
             <span
               className="block h-px transition-all duration-200"
               style={{
-                background: '#00d4ff',
+                background: ' #207729',
                 opacity: menuOpen ? 0 : 1,
               }}
             />
             <span
               className="block h-px transition-all duration-200"
               style={{
-                background: '#00d4ff',
+                background: ' #207729',
                 transform: menuOpen ? 'rotate(-45deg) translateY(-5px)' : 'none',
               }}
             />
@@ -210,7 +210,7 @@ function Navbar() {
               style={{
                 fontFamily: "'Exo 2', sans-serif",
                 color: '#070b14',
-                background: '#00d4ff',
+                background: ' #207729',
                 padding: '10px 20px',
                 border: 'none',
                 cursor: 'pointer',
@@ -273,7 +273,7 @@ function Hero() {
               className="inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase"
               style={{
                 fontFamily: "'Exo 2', sans-serif",
-                color: '#00d4ff',
+                color: ' #207729',
                 border: '1px solid rgba(0, 212, 255, 0.25)',
                 padding: '6px 14px',
                 background: 'rgba(0, 212, 255, 0.06)',
@@ -282,7 +282,7 @@ function Hero() {
             >
               <span
                 className="w-1.5 h-1.5 rounded-full"
-                style={{ background: '#00d4ff', animation: 'pulse-cyan 2s ease-in-out infinite' }}
+                style={{ background: ' #207729', animation: 'pulse-cyan 2s ease-in-out infinite' }}
               />
               Digital Marketing & Web Development
             </div>
@@ -299,7 +299,7 @@ function Hero() {
               </span>
               <span
                 className="block text-5xl lg:text-7xl font-extrabold glow-cyan"
-                style={{ color: '#00d4ff', letterSpacing: '-0.02em', lineHeight: 1.05 }}
+                style={{ color: ' #207729', letterSpacing: '-0.02em', lineHeight: 1.05 }}
               >
                 Brand With
               </span>
@@ -327,7 +327,7 @@ function Hero() {
                   fontWeight: 700,
                   letterSpacing: '0.08em',
                   color: '#070b14',
-                  background: '#00d4ff',
+                  background: ' #207729',
                   padding: '14px 28px',
                   border: 'none',
                   cursor: 'pointer',
@@ -336,11 +336,11 @@ function Hero() {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.boxShadow = '0 0 32px rgba(0, 212, 255, 0.6)'
-                  e.currentTarget.style.background = '#33dcff'
+                  e.currentTarget.style.background = ' #207729'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.boxShadow = 'none'
-                  e.currentTarget.style.background = '#00d4ff'
+                  e.currentTarget.style.background = ' #207729'
                 }}
               >
                 Get Started
@@ -364,7 +364,7 @@ function Hero() {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.borderColor = 'rgba(0, 212, 255, 0.4)'
-                  e.currentTarget.style.color = '#00d4ff'
+                  e.currentTarget.style.color = ' #207729'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'
@@ -385,7 +385,7 @@ function Hero() {
                 <div key={stat.label}>
                   <div
                     className="text-2xl font-bold"
-                    style={{ fontFamily: "'Exo 2', sans-serif", color: '#00d4ff' }}
+                    style={{ fontFamily: "'Exo 2', sans-serif", color: ' #207729' }}
                   >
                     {stat.num}
                   </div>
@@ -425,7 +425,7 @@ function Hero() {
                 <div>
                   <div
                     className="text-xs font-semibold tracking-widest uppercase mb-1"
-                    style={{ fontFamily: "'Exo 2', sans-serif", color: '#00d4ff', letterSpacing: '0.14em' }}
+                    style={{ fontFamily: "'Exo 2', sans-serif", color: ' #207729', letterSpacing: '0.14em' }}
                   >
                     Live Marketing Dashboard
                   </div>
@@ -439,11 +439,11 @@ function Hero() {
                 <div className="flex items-center gap-1.5">
                   <span
                     className="w-2 h-2 rounded-full"
-                    style={{ background: '#00d4ff', animation: 'pulse-cyan 1.5s ease-in-out infinite' }}
+                    style={{ background: ' #207729', animation: 'pulse-cyan 1.5s ease-in-out infinite' }}
                   />
                   <span
                     className="text-xs"
-                    style={{ fontFamily: "'Exo 2', sans-serif", color: '#00d4ff', letterSpacing: '0.1em' }}
+                    style={{ fontFamily: "'Exo 2', sans-serif", color: ' #207729', letterSpacing: '0.1em' }}
                   >
                     LIVE
                   </span>
@@ -484,7 +484,7 @@ function Hero() {
                     </div>
                     <div
                       className="text-xs font-medium"
-                      style={{ fontFamily: "'Exo 2', sans-serif", color: '#00d4ff' }}
+                      style={{ fontFamily: "'Exo 2', sans-serif", color: ' #207729' }}
                     >
                       ↑ {m.delta}
                     </div>
@@ -515,7 +515,7 @@ function Hero() {
                   >
                     <span
                       className="w-1 h-1 rounded-full flex-shrink-0"
-                      style={{ background: i === 0 ? '#00d4ff' : '#3a4255' }}
+                      style={{ background: i === 0 ? ' #207729' : '#3a4255' }}
                     />
                     {item}
                   </div>
@@ -540,7 +540,7 @@ function Hero() {
                       className="w-6"
                       style={{
                         height: `${[12, 20, 16, 24, 18][i]}px`,
-                        background: i < 3 ? '#00d4ff' : 'rgba(0, 212, 255, 0.2)',
+                        background: i < 3 ? ' #207729' : 'rgba(0, 212, 255, 0.2)',
                         transition: 'height 0.3s ease',
                       }}
                     />
@@ -553,7 +553,7 @@ function Hero() {
             <div
               className="absolute -top-px -right-px w-12 h-12 pointer-events-none"
               style={{
-                background: 'linear-gradient(135deg, #00d4ff 0%, transparent 60%)',
+                background: 'linear-gradient(135deg,  #207729 0%, transparent 60%)',
                 opacity: 0.6,
                 clipPath: 'polygon(100% 0%, 0% 0%, 100% 100%)',
               }}
@@ -561,7 +561,7 @@ function Hero() {
             <div
               className="absolute -bottom-px -left-px w-8 h-8 pointer-events-none"
               style={{
-                background: 'linear-gradient(315deg, #00d4ff 0%, transparent 60%)',
+                background: 'linear-gradient(315deg,  #207729 0%, transparent 60%)',
                 opacity: 0.4,
                 clipPath: 'polygon(0% 100%, 0% 0%, 100% 100%)',
               }}
@@ -625,7 +625,7 @@ function About() {
               ))}
               {/* Center circle */}
               <circle cx="200" cy="190" r="30" fill="none" stroke="rgba(0, 212, 255, 0.4)" strokeWidth="1.5"/>
-              <circle cx="200" cy="190" r="4" fill="#00d4ff" />
+              <circle cx="200" cy="190" r="4" fill=" #207729" />
               {/* Floating data points */}
               <circle cx="160" cy="150" r="2" fill="rgba(0, 212, 255, 0.5)"/>
               <circle cx="240" cy="150" r="2" fill="rgba(0, 212, 255, 0.5)"/>
@@ -649,7 +649,7 @@ function About() {
             <div>
               <div
                 className="text-xs font-semibold tracking-widest uppercase mb-4"
-                style={{ fontFamily: "'Exo 2', sans-serif", color: '#00d4ff', letterSpacing: '0.18em' }}
+                style={{ fontFamily: "'Exo 2', sans-serif", color: ' #207729', letterSpacing: '0.18em' }}
               >
                 — About Us
               </div>
@@ -659,7 +659,7 @@ function About() {
               >
                 Built for Brands
                 <br />
-                <span style={{ color: '#00d4ff' }}>That Mean Business.</span>
+                <span style={{ color: ' #207729' }}>That Mean Business.</span>
               </h2>
               <p
                 className="text-base leading-loose mb-6"
@@ -704,7 +704,7 @@ function About() {
                     ;(e.currentTarget as HTMLElement).style.background = 'rgba(0, 212, 255, 0.02)'
                   }}
                 >
-                  <div className="text-lg mb-2" style={{ color: '#00d4ff' }}>{p.icon}</div>
+                  <div className="text-lg mb-2" style={{ color: ' #207729' }}>{p.icon}</div>
                   <div
                     className="text-sm font-semibold mb-1"
                     style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5' }}
@@ -771,7 +771,7 @@ function Services() {
         <div className="mb-16">
           <div
             className="text-xs font-semibold tracking-widest uppercase mb-4"
-            style={{ fontFamily: "'Exo 2', sans-serif", color: '#00d4ff', letterSpacing: '0.18em' }}
+            style={{ fontFamily: "'Exo 2', sans-serif", color: ' #207729', letterSpacing: '0.18em' }}
           >
             — What We Do
           </div>
@@ -782,7 +782,7 @@ function Services() {
             >
               Services Built to
               <br />
-              <span style={{ color: '#00d4ff' }}>Perform.</span>
+              <span style={{ color: ' #207729' }}>Perform.</span>
             </h2>
             <p
               className="text-sm max-w-xs leading-loose"
@@ -865,11 +865,11 @@ function ServiceCardContent({ service }: { service: { num: string; title: string
           className="w-8 h-8 flex items-center justify-center transition-all duration-200"
           style={{
             border: '1px solid rgba(0, 212, 255, 0.2)',
-            color: '#00d4ff',
+            color: ' #207729',
           }}
         >
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M2 7h10M8 3l4 4-4 4" stroke="#00d4ff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M2 7h10M8 3l4 4-4 4" stroke=" #207729" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </div>
       </div>
@@ -927,7 +927,7 @@ function StatsBand() {
             <div key={stat.label} className="text-center">
               <div
                 className="text-4xl font-extrabold mb-2"
-                style={{ fontFamily: "'Exo 2', sans-serif", color: '#00d4ff' }}
+                style={{ fontFamily: "'Exo 2', sans-serif", color: ' #207729' }}
               >
                 <AnimatedCounter end={stat.end} suffix={stat.suffix} prefix={stat.prefix} />
               </div>
@@ -997,7 +997,7 @@ function Testimonials() {
         <div className="mb-16">
           <div
             className="text-xs font-semibold tracking-widest uppercase mb-4"
-            style={{ fontFamily: "'Exo 2', sans-serif", color: '#00d4ff', letterSpacing: '0.18em' }}
+            style={{ fontFamily: "'Exo 2', sans-serif", color: ' #207729', letterSpacing: '0.18em' }}
           >
             — Client Results
           </div>
@@ -1038,7 +1038,7 @@ function Testimonials() {
                     fontFamily: "'Exo 2', sans-serif",
                     background: 'rgba(0, 212, 255, 0.12)',
                     border: '1px solid rgba(0, 212, 255, 0.3)',
-                    color: '#00d4ff',
+                    color: ' #207729',
                   }}
                 >
                   {testimonials[active].initials}
@@ -1062,7 +1062,7 @@ function Testimonials() {
                 className="text-sm font-bold px-4 py-2"
                 style={{
                   fontFamily: "'Exo 2', sans-serif",
-                  color: '#00d4ff',
+                  color: ' #207729',
                   border: '1px solid rgba(0, 212, 255, 0.25)',
                   background: 'rgba(0, 212, 255, 0.06)',
                   letterSpacing: '0.06em',
@@ -1090,7 +1090,7 @@ function Testimonials() {
                   className="text-xs font-semibold mb-1"
                   style={{
                     fontFamily: "'Exo 2', sans-serif",
-                    color: active === i ? '#00d4ff' : '#3a4255',
+                    color: active === i ? ' #207729' : '#3a4255',
                     letterSpacing: '0.04em',
                   }}
                 >
@@ -1110,7 +1110,7 @@ function Testimonials() {
                   className="text-xs font-bold mt-2"
                   style={{
                     fontFamily: "'Exo 2', sans-serif",
-                    color: active === i ? '#00d4ff' : 'rgba(0, 212, 255, 0.2)',
+                    color: active === i ? ' #207729' : 'rgba(0, 212, 255, 0.2)',
                   }}
                 >
                   {t.result}
@@ -1158,7 +1158,7 @@ function Contact() {
             <div>
               <div
                 className="text-xs font-semibold tracking-widest uppercase mb-4"
-                style={{ fontFamily: "'Exo 2', sans-serif", color: '#00d4ff', letterSpacing: '0.18em' }}
+                style={{ fontFamily: "'Exo 2', sans-serif", color: ' #207729', letterSpacing: '0.18em' }}
               >
                 — Get In Touch
               </div>
@@ -1168,7 +1168,7 @@ function Contact() {
               >
                 Ready to Scale
                 <br />
-                <span style={{ color: '#00d4ff' }}>Intelligently?</span>
+                <span style={{ color: ' #207729' }}>Intelligently?</span>
               </h2>
               <p
                 className="text-base leading-loose"
@@ -1191,7 +1191,7 @@ function Contact() {
                     className="w-9 h-9 flex items-center justify-center text-sm flex-shrink-0"
                     style={{
                       border: '1px solid rgba(0, 212, 255, 0.2)',
-                      color: '#00d4ff',
+                      color: ' #207729',
                       background: 'rgba(0, 212, 255, 0.04)',
                     }}
                   >
@@ -1226,7 +1226,7 @@ function Contact() {
                   background: 'rgba(0, 212, 255, 0.03)',
                 }}
               >
-                <div className="text-4xl mb-4" style={{ color: '#00d4ff' }}>◎</div>
+                <div className="text-4xl mb-4" style={{ color: ' #207729' }}>◎</div>
                 <h3
                   className="text-2xl font-bold mb-3"
                   style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5' }}
@@ -1248,7 +1248,7 @@ function Contact() {
                       className="block text-xs font-semibold tracking-widest uppercase mb-2 transition-all duration-200"
                       style={{
                         fontFamily: "'Exo 2', sans-serif",
-                        color: focused === key ? '#00d4ff' : '#3a4255',
+                        color: focused === key ? ' #207729' : '#3a4255',
                         letterSpacing: '0.12em',
                       }}
                     >
@@ -1283,7 +1283,7 @@ function Contact() {
                     className="block text-xs font-semibold tracking-widest uppercase mb-2 transition-all duration-200"
                     style={{
                       fontFamily: "'Exo 2', sans-serif",
-                      color: focused === 'message' ? '#00d4ff' : '#3a4255',
+                      color: focused === 'message' ? ' #207729' : '#3a4255',
                       letterSpacing: '0.12em',
                     }}
                   >
@@ -1318,7 +1318,7 @@ function Contact() {
                   style={{
                     fontFamily: "'Exo 2', sans-serif",
                     color: '#070b14',
-                    background: '#00d4ff',
+                    background: ' #207729',
                     border: 'none',
                     cursor: 'pointer',
                     letterSpacing: '0.14em',
@@ -1329,7 +1329,7 @@ function Contact() {
                     e.currentTarget.style.boxShadow = '0 0 32px rgba(0, 212, 255, 0.5)'
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.background = '#00d4ff'
+                    e.currentTarget.style.background = ' #207729'
                     e.currentTarget.style.boxShadow = 'none'
                   }}
                 >
@@ -1381,7 +1381,7 @@ function Footer() {
                 className="text-sm font-bold tracking-widest"
                 style={{ fontFamily: "'Exo 2', sans-serif", color: '#e8edf5', letterSpacing: '0.16em' }}
               >
-                CSA<span style={{ color: '#00d4ff' }}>.</span>TRADING
+                CSA<span style={{ color: ' #207729' }}>.</span>TRADING
               </span>
             </div>
             <p
@@ -1405,7 +1405,7 @@ function Footer() {
                   }}
                   onMouseEnter={(e) => {
                     (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0, 212, 255, 0.5)'
-                    ;(e.currentTarget as HTMLElement).style.color = '#00d4ff'
+                    ;(e.currentTarget as HTMLElement).style.color = ' #207729'
                     ;(e.currentTarget as HTMLElement).style.background = 'rgba(0, 212, 255, 0.06)'
                   }}
                   onMouseLeave={(e) => {
@@ -1465,17 +1465,17 @@ function Footer() {
               style={{
                 fontFamily: "'Exo 2', sans-serif",
                 color: '#070b14',
-                background: '#00d4ff',
+                background: ' #207729',
                 textDecoration: 'none',
                 letterSpacing: '0.12em',
                 clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)',
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.background = '#33dcff'
+                (e.currentTarget as HTMLElement).style.background = ' #207729'
                 ;(e.currentTarget as HTMLElement).style.boxShadow = '0 0 24px rgba(0, 212, 255, 0.4)'
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.background = '#00d4ff'
+                (e.currentTarget as HTMLElement).style.background = ' #207729'
                 ;(e.currentTarget as HTMLElement).style.boxShadow = 'none'
               }}
             >

@@ -16,7 +16,7 @@
   src: url('https://static.figma.com/font/DMSans_opsz_wght__1') format('woff2');
 }
 
-@theme {
+:root {
   --font-sans: 'DM Sans', system-ui, sans-serif;
   --font-display: 'Exo 2', system-ui, sans-serif;
 
