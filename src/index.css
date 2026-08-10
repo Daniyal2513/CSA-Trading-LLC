@@ -71,10 +71,11 @@ body {
 }
 
 /* Futuristic grid background utility */
+/* Futuristic grid background utility */
 .grid-bg {
   background-image:
-    linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(32, 119, 41, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(32, 119, 41, 0.08) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 

@@ -358,7 +358,7 @@ function Hero() {
                   color: '#000000',
                   background: 'transparent',
                   padding: '14px 28px',
-                  border: '1px solid rgba(255,255,255,0.12)',
+                  border: '1px solid rgba(0, 0, 0, 0.15)',
                   cursor: 'pointer',
                   transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
                 }}
@@ -367,7 +367,7 @@ function Hero() {
                   e.currentTarget.style.color = ' #207729'
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'
+                  e.currentTarget.style.borderColor = 'rgba(0, 0, 0, 0.15)'
                   e.currentTarget.style.color = '#000000'
                 }}
               >
@@ -798,24 +798,24 @@ function Services() {
           {/* Row 1: Wide + Narrow */}
           <div
             className="md:col-span-2 p-8 group transition-all duration-300 cursor-pointer"
-            style={{ background: '#070b14' }}
+            style={{ background: '#ffffff' }}
             onMouseEnter={(e) => {
               (e.currentTarget as HTMLElement).style.background = 'rgba(245, 245, 245, 1)'
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.background = '#070b14'
+              (e.currentTarget as HTMLElement).style.background = '#ffffff'
             }}
           >
             <ServiceCardContent service={services[0]} />
           </div>
           <div
             className="p-8 group transition-all duration-300 cursor-pointer"
-            style={{ background: '#070b14' }}
+            style={{ background: '#ffffff' }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.background = 'rgba(13, 20, 34, 1)'
+              (e.currentTarget as HTMLElement).style.background = 'rgba(245, 245, 245, 1)'
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.background = '#070b14'
+              (e.currentTarget as HTMLElement).style.background = '#ffffff'
             }}
           >
             <ServiceCardContent service={services[1]} />
@@ -823,24 +823,24 @@ function Services() {
           {/* Row 2: Narrow + Wide */}
           <div
             className="p-8 group transition-all duration-300 cursor-pointer"
-            style={{ background: '#070b14' }}
+            style={{ background: '#ffffff' }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.background = 'rgba(13, 20, 34, 1)'
+              (e.currentTarget as HTMLElement).style.background = 'rgba(245, 245, 245, 1)'
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.background = '#070b14'
+              (e.currentTarget as HTMLElement).style.background = '#ffffff'
             }}
           >
             <ServiceCardContent service={services[2]} />
           </div>
           <div
             className="md:col-span-2 p-8 group transition-all duration-300 cursor-pointer"
-            style={{ background: '#070b14' }}
+            style={{ background: '#ffffff' }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.background = 'rgba(13, 20, 34, 1)'
+              (e.currentTarget as HTMLElement).style.background = 'rgba(245, 245, 245, 1)'
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.background = '#070b14'
+              (e.currentTarget as HTMLElement).style.background = '#ffffff'
             }}
           >
             <ServiceCardContent service={services[3]} />
@@ -1014,7 +1014,7 @@ function Testimonials() {
           <div
             className="lg:col-span-2 p-8 relative overflow-hidden"
             style={{
-              background: 'rgba(13, 20, 34, 0.8)',
+              background: 'rgba(240, 240, 240, 0.8)',
               border: '1px solid rgba(0, 212, 255, 0.2)',
             }}
           >
@@ -1267,7 +1267,7 @@ function Contact() {
                         fontFamily: "'DM Sans', sans-serif",
                         fontWeight: 300,
                         color: '#000000',
-                        background: 'rgba(13, 20, 34, 0.8)',
+                        background: 'rgba(240, 240, 240, 0.8)',
                         border: focused === key
                           ? '1px solid rgba(0, 212, 255, 0.5)'
                           : '1px solid rgba(0, 212, 255, 0.12)',
@@ -1302,7 +1302,7 @@ function Contact() {
                       fontFamily: "'DM Sans', sans-serif",
                       fontWeight: 300,
                       color: '#000000',
-                      background: 'rgba(13, 20, 34, 0.8)',
+                      background: 'rgba(240, 240, 240, 0.8)',
                       border: focused === 'message'
                         ? '1px solid rgba(0, 212, 255, 0.5)'
                         : '1px solid rgba(0, 212, 255, 0.12)',
@@ -1519,7 +1519,7 @@ function Footer() {
 
 export default function App() {
   return (
-    <div style={{ background: '#070b14', minHeight: '100vh' }}>
+    <div style={{ background: '#ffffff', minHeight: '100vh' }}>
       <Navbar />
       <Hero />
       <StatsBand />
