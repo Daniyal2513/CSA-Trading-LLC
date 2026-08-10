@@ -598,49 +598,49 @@ function About() {
               <polygon
                 points="200,20 360,110 360,270 200,360 40,270 40,110"
                 fill="none"
-                stroke="rgba(0, 212, 255, 0.2)"
+                stroke="rgba(32, 119, 41, 0.25)"
                 strokeWidth="1"
               />
               {/* Mid hexagon */}
               <polygon
                 points="200,60 320,130 320,250 200,320 80,250 80,130"
                 fill="none"
-                stroke="rgba(0, 212, 255, 0.12)"
+                stroke="rgba(32, 119, 41, 0.15)"
                 strokeWidth="1"
               />
               {/* Inner hexagon */}
               <polygon
                 points="200,100 280,150 280,230 200,280 120,230 120,150"
                 fill="none"
-                stroke="rgba(0, 212, 255, 0.3)"
+                stroke="rgba(32, 119, 41, 0.4)"
                 strokeWidth="1.5"
               />
               {/* Cross lines */}
-              <line x1="200" y1="20" x2="200" y2="360" stroke="rgba(0, 212, 255, 0.08)" strokeWidth="1"/>
-              <line x1="40" y1="110" x2="360" y2="270" stroke="rgba(0, 212, 255, 0.08)" strokeWidth="1"/>
-              <line x1="360" y1="110" x2="40" y2="270" stroke="rgba(0, 212, 255, 0.08)" strokeWidth="1"/>
+              <line x1="200" y1="20" x2="200" y2="360" stroke="rgba(32, 119, 41, 0.1)" strokeWidth="1"/>
+              <line x1="40" y1="110" x2="360" y2="270" stroke="rgba(32, 119, 41, 0.1)" strokeWidth="1"/>
+              <line x1="360" y1="110" x2="40" y2="270" stroke="rgba(32, 119, 41, 0.1)" strokeWidth="1"/>
               {/* Corner dots */}
               {[[200,20],[360,110],[360,270],[200,360],[40,270],[40,110]].map(([cx,cy], i) => (
-                <circle key={i} cx={cx} cy={cy} r="3" fill="rgba(0, 212, 255, 0.6)" />
+                <circle key={i} cx={cx} cy={cy} r="3" fill="rgba(32, 119, 41, 0.7)" />
               ))}
               {/* Center circle */}
-              <circle cx="200" cy="190" r="30" fill="none" stroke="rgba(0, 212, 255, 0.4)" strokeWidth="1.5"/>
-              <circle cx="200" cy="190" r="4" fill=" #207729" />
+              <circle cx="200" cy="190" r="30" fill="none" stroke="rgba(32, 119, 41, 0.5)" strokeWidth="1.5"/>
+              <circle cx="200" cy="190" r="4" fill="#207729" />
               {/* Floating data points */}
-              <circle cx="160" cy="150" r="2" fill="rgba(0, 212, 255, 0.5)"/>
-              <circle cx="240" cy="150" r="2" fill="rgba(0, 212, 255, 0.5)"/>
-              <circle cx="160" cy="230" r="2" fill="rgba(0, 212, 255, 0.5)"/>
-              <circle cx="240" cy="230" r="2" fill="rgba(0, 212, 255, 0.5)"/>
+              <circle cx="160" cy="150" r="2" fill="rgba(32, 119, 41, 0.6)"/>
+              <circle cx="240" cy="150" r="2" fill="rgba(32, 119, 41, 0.6)"/>
+              <circle cx="160" cy="230" r="2" fill="rgba(32, 119, 41, 0.6)"/>
+              <circle cx="240" cy="230" r="2" fill="rgba(32, 119, 41, 0.6)"/>
               {/* Lines to center */}
-              <line x1="160" y1="150" x2="200" y2="190" stroke="rgba(0, 212, 255, 0.2)" strokeWidth="1"/>
-              <line x1="240" y1="150" x2="200" y2="190" stroke="rgba(0, 212, 255, 0.2)" strokeWidth="1"/>
-              <line x1="160" y1="230" x2="200" y2="190" stroke="rgba(0, 212, 255, 0.2)" strokeWidth="1"/>
-              <line x1="240" y1="230" x2="200" y2="190" stroke="rgba(0, 212, 255, 0.2)" strokeWidth="1"/>
+              <line x1="160" y1="150" x2="200" y2="190" stroke="rgba(32, 119, 41, 0.25)" strokeWidth="1"/>
+              <line x1="240" y1="150" x2="200" y2="190" stroke="rgba(32, 119, 41, 0.25)" strokeWidth="1"/>
+              <line x1="160" y1="230" x2="200" y2="190" stroke="rgba(32, 119, 41, 0.25)" strokeWidth="1"/>
+              <line x1="240" y1="230" x2="200" y2="190" stroke="rgba(32, 119, 41, 0.25)" strokeWidth="1"/>
               {/* Labels */}
-              <text x="85" y="105" fill="rgba(0, 212, 255, 0.5)" fontSize="9" fontFamily="'Exo 2', sans-serif" letterSpacing="1">STRATEGY</text>
-              <text x="280" y="105" fill="rgba(0, 212, 255, 0.5)" fontSize="9" fontFamily="'Exo 2', sans-serif" letterSpacing="1">GROWTH</text>
-              <text x="62" y="280" fill="rgba(0, 212, 255, 0.5)" fontSize="9" fontFamily="'Exo 2', sans-serif" letterSpacing="1">ANALYTICS</text>
-              <text x="280" y="280" fill="rgba(0, 212, 255, 0.5)" fontSize="9" fontFamily="'Exo 2', sans-serif" letterSpacing="1">SCALE</text>
+              <text x="85" y="105" fill="#000000" fontSize="9" fontFamily="'Exo 2', sans-serif" letterSpacing="1">STRATEGY</text>
+              <text x="280" y="105" fill="#000000" fontSize="9" fontFamily="'Exo 2', sans-serif" letterSpacing="1">GROWTH</text>
+              <text x="62" y="280" fill="#000000" fontSize="9" fontFamily="'Exo 2', sans-serif" letterSpacing="1">ANALYTICS</text>
+              <text x="280" y="280" fill="#000000" fontSize="9" fontFamily="'Exo 2', sans-serif" letterSpacing="1">SCALE</text>
             </svg>
           </div>
 
