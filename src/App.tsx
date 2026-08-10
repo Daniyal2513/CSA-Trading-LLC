@@ -778,7 +778,7 @@ function Services() {
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <h2
               className="text-4xl lg:text-5xl font-extrabold leading-tight"
-              style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000', letterSpacing: '-0.02em' }}
+              style={{ fontFamily: "'Exo 2', sans-serif", color: '#ffffff', letterSpacing: '-0.02em' }}
             >
               Services Built to
               <br />
