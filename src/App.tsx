@@ -128,7 +128,7 @@ function Navbar() {
           style={{
             fontFamily: "'Exo 2', sans-serif",
             fontWeight: 600,
-            color: '#070b14',
+            color: '#ffffff',
             background: ' #207729',
             padding: '8px 20px',
             letterSpacing: '0.06em',
@@ -209,7 +209,7 @@ function Navbar() {
               className="text-sm font-semibold mt-2"
               style={{
                 fontFamily: "'Exo 2', sans-serif",
-                color: '#070b14',
+                color: '#ffffff',
                 background: ' #207729',
                 padding: '10px 20px',
                 border: 'none',
@@ -326,7 +326,7 @@ function Hero() {
                   fontFamily: "'Exo 2', sans-serif",
                   fontWeight: 700,
                   letterSpacing: '0.08em',
-                  color: '#070b14',
+                  color: '#ffffff',
                   background: ' #207729',
                   padding: '14px 28px',
                   border: 'none',
@@ -1317,7 +1317,7 @@ function Contact() {
                   className="w-full py-4 text-sm font-bold tracking-widest uppercase transition-all duration-200"
                   style={{
                     fontFamily: "'Exo 2', sans-serif",
-                    color: '#070b14',
+                    color: '#ffffff',
                     background: ' #207729',
                     border: 'none',
                     cursor: 'pointer',
@@ -1464,7 +1464,7 @@ function Footer() {
               className="inline-block text-xs font-bold uppercase tracking-widest py-3 px-6 transition-all duration-200"
               style={{
                 fontFamily: "'Exo 2', sans-serif",
-                color: '#070b14',
+                color: '#ffffff',
                 background: ' #207729',
                 textDecoration: 'none',
                 letterSpacing: '0.12em',
