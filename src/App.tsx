@@ -655,7 +655,7 @@ function About() {
               </div>
               <h2
                 className="text-4xl lg:text-5xl font-extrabold leading-tight mb-6"
-                style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000'', letterSpacing: '-0.02em' }}
+                style={{ fontFamily: "'Exo 2', sans-serif", color: '#000000', letterSpacing: '-0.02em' }}
               >
                 Built for Brands
                 <br />
