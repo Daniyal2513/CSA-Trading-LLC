@@ -391,7 +391,7 @@ function Hero() {
                   </div>
                   <div
                     className="text-xs mt-0.5"
-                    style={{ fontFamily: "'DM Sans', sans-serif", color: '#3a4255', letterSpacing: '0.04em' }}
+                    style={{ fontFamily: "'DM Sans', sans-serif", color: '#555555', letterSpacing: '0.04em' }}
                   >
                     {stat.label}
                   </div>
