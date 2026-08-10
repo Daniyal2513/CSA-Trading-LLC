@@ -894,7 +894,7 @@ function ServiceCardContent({ service }: { service: { num: string; title: string
             className="text-xs px-2 py-1"
             style={{
               fontFamily: "'Exo 2', sans-serif",
-              color: 'rgba(0, 212, 255, 0.6)',
+              color: '#207729',
               border: '1px solid rgba(0, 212, 255, 0.12)',
               letterSpacing: '0.08em',
               background: 'rgba(0, 212, 255, 0.03)',
