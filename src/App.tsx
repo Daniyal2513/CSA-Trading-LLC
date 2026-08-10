@@ -82,7 +82,7 @@ function Navbar() {
             className="w-8 h-8 flex items-center justify-center"
             style={{
               border: '1.5px solid rgba(0, 212, 255, 0.6)',
-              background: 'rgba(218, 218, 218, 0.08)',
+              background: 'rgba(183, 182, 182, 0.08)',
               clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
             }}
           >
