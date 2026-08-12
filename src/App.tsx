@@ -1471,8 +1471,8 @@ function Footer() {
                 clipPath: 'polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%)',
               }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.boxShadow = '0 0 24px rgba(32, 119, 41, 0.5)'
-                ;(e.currentTarget as HTMLElement).style.boxShadow = '0 0 24px rgba(0, 212, 255, 0.4)'
+                (e.currentTarget as HTMLElement).style.boxShadow = '0 0 24px rgba(32, 119, 41, 1.05)';
+                (e.currentTarget as HTMLElement).style.boxShadow = '0 0 24px rgba(0, 212, 255, 0.4)'
               }}
               onMouseLeave={(e) => {
                 (e.currentTarget as HTMLElement).style.background = ' #207729'
