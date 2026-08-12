@@ -1472,7 +1472,7 @@ function Footer() {
               }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLElement).style.boxShadow = '0 0 24px rgba(32, 119, 41, 1.05)';
-                (e.currentTarget as HTMLElement).style.boxShadow = '0 0 24px rgba(0, 212, 255, 0.4)'
+                (e.currentTarget as HTMLElement).style.boxShadow = 'none';
               }}
               onMouseLeave={(e) => {
                 (e.currentTarget as HTMLElement).style.background = ' #207729'
