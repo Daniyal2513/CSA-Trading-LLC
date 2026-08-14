@@ -23,6 +23,10 @@ const WHATSAPP_NUMBER = '17038633010'
 function scrollToContact() {
   document.getElementById('contact-us')?.scrollIntoView({ behavior: 'smooth' })
 }
+// Smooth-scrolls to the services section
+function scrollToServices() {
+  document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
+}
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface CounterProps {
@@ -137,14 +141,14 @@ function Navbar() {
         >
           Let's Talk
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-            <path d="M2 6h8M7 3l3 3-3 3" stroke={BG} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M2 6h8M7 3l3 3-3 3" stroke={BG} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
 
         {/* Mobile burger */}
         <button className="md:hidden p-2" style={{ background: 'none', border: 'none', cursor: 'pointer' }} onClick={() => setMenuOpen(!menuOpen)}>
           <div className="flex flex-col gap-1.5 w-5">
-            {[0,1,2].map((i) => (
+            {[0, 1, 2].map((i) => (
               <span key={i} className="block h-px transition-all duration-200" style={{
                 background: TEXT,
                 transform: i === 0 && menuOpen ? 'rotate(45deg) translateY(5px)' : i === 2 && menuOpen ? 'rotate(-45deg) translateY(-5px)' : 'none',
@@ -232,11 +236,12 @@ function Hero() {
                 onMouseLeave={(e) => { e.currentTarget.style.background = G; e.currentTarget.style.boxShadow = 'none' }}
               >
                 Get Started
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke={BG} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke={BG} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </button>
               <button
                 className="flex items-center gap-2 text-sm font-medium transition-all duration-200"
                 style={{ fontFamily: "'Exo 2'", fontWeight: 500, letterSpacing: '0.06em', color: TEXT, background: 'transparent', padding: '14px 28px', border: `1px solid rgba(0,0,0,0.15)`, cursor: 'pointer' }}
+                onClick={scrollToServices}
                 onMouseEnter={(e) => { e.currentTarget.style.borderColor = BORDER_STRONG; e.currentTarget.style.color = G }}
                 onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.15)'; e.currentTarget.style.color = TEXT }}
               >
@@ -341,24 +346,24 @@ function About() {
           {/* Geometric SVG */}
           <div className="relative h-80 lg:h-96 order-2 lg:order-1">
             <svg viewBox="0 0 400 380" className="w-full h-full" style={{ opacity: 0.85 }}>
-              <polygon points="200,20 360,110 360,270 200,360 40,270 40,110" fill="none" stroke={BORDER} strokeWidth="1"/>
-              <polygon points="200,60 320,130 320,250 200,320 80,250 80,130" fill="none" stroke="rgba(0,185,107,0.1)" strokeWidth="1"/>
-              <polygon points="200,100 280,150 280,230 200,280 120,230 120,150" fill="none" stroke={BORDER_STRONG} strokeWidth="1.5"/>
-              <line x1="200" y1="20" x2="200" y2="360" stroke="rgba(0,185,107,0.07)" strokeWidth="1"/>
-              <line x1="40" y1="110" x2="360" y2="270" stroke="rgba(0,185,107,0.07)" strokeWidth="1"/>
-              <line x1="360" y1="110" x2="40" y2="270" stroke="rgba(0,185,107,0.07)" strokeWidth="1"/>
-              {([[200,20],[360,110],[360,270],[200,360],[40,270],[40,110]] as [number,number][]).map(([cx,cy], i) => (
+              <polygon points="200,20 360,110 360,270 200,360 40,270 40,110" fill="none" stroke={BORDER} strokeWidth="1" />
+              <polygon points="200,60 320,130 320,250 200,320 80,250 80,130" fill="none" stroke="rgba(0,185,107,0.1)" strokeWidth="1" />
+              <polygon points="200,100 280,150 280,230 200,280 120,230 120,150" fill="none" stroke={BORDER_STRONG} strokeWidth="1.5" />
+              <line x1="200" y1="20" x2="200" y2="360" stroke="rgba(0,185,107,0.07)" strokeWidth="1" />
+              <line x1="40" y1="110" x2="360" y2="270" stroke="rgba(0,185,107,0.07)" strokeWidth="1" />
+              <line x1="360" y1="110" x2="40" y2="270" stroke="rgba(0,185,107,0.07)" strokeWidth="1" />
+              {([[200, 20], [360, 110], [360, 270], [200, 360], [40, 270], [40, 110]] as [number, number][]).map(([cx, cy], i) => (
                 <circle key={i} cx={cx} cy={cy} r="3" fill={`rgba(0,185,107,0.6)`} />
               ))}
-              <circle cx="200" cy="190" r="30" fill="none" stroke={BORDER_STRONG} strokeWidth="1.5"/>
+              <circle cx="200" cy="190" r="30" fill="none" stroke={BORDER_STRONG} strokeWidth="1.5" />
               <circle cx="200" cy="190" r="4" fill={G} />
-              {([[160,150],[240,150],[160,230],[240,230]] as [number,number][]).map(([cx,cy], i) => (
+              {([[160, 150], [240, 150], [160, 230], [240, 230]] as [number, number][]).map(([cx, cy], i) => (
                 <g key={i}>
-                  <circle cx={cx} cy={cy} r="2" fill={`rgba(0,185,107,0.5)`}/>
-                  <line x1={cx} y1={cy} x2="200" y2="190" stroke="rgba(0,185,107,0.2)" strokeWidth="1"/>
+                  <circle cx={cx} cy={cy} r="2" fill={`rgba(0,185,107,0.5)`} />
+                  <line x1={cx} y1={cy} x2="200" y2="190" stroke="rgba(0,185,107,0.2)" strokeWidth="1" />
                 </g>
               ))}
-              {[['STRATEGY', 85, 105], ['GROWTH', 280, 105], ['ANALYTICS', 62, 280], ['SCALE', 280, 280]].map(([t,x,y]) => (
+              {[['STRATEGY', 85, 105], ['GROWTH', 280, 105], ['ANALYTICS', 62, 280], ['SCALE', 280, 280]].map(([t, x, y]) => (
                 <text key={t as string} x={x} y={y} fill={`rgba(0,185,107,0.5)`} fontSize="9" fontFamily="'Exo 2'" letterSpacing="1">{t}</text>
               ))}
             </svg>
@@ -450,7 +455,7 @@ function ServiceCard({ service, className = '' }: { service: { num: string; titl
         </div>
       </div>
       <h3 className="text-xl font-bold mb-3" style={{ fontFamily: "'Exo 2'", color: TEXT, letterSpacing: '-0.01em' }}>{service.title}</h3>
-      <p className="text-sm leading-loose flex-1 mb-6" style={{ fontFamily: "'DM Sans'", fontWeight: 300, color: MUTED }}>{service.desc}</p>
+      <p className="text-sm leading-loose flex-1 mb-6" style={{ fontFamily: "'DM Sans'", fontWeight: 500, color: MUTED }}>{service.desc}</p>
       <div className="flex flex-wrap gap-2">
         {service.tags.map((tag) => (
           <span key={tag} className="text-xs px-2 py-1" style={{ fontFamily: "'Exo 2'", color: G, border: `1px solid ${BORDER}`, letterSpacing: '0.08em', background: G_DIM }}>{tag}</span>
@@ -535,7 +540,7 @@ function PricingCard({ plan, index }: { plan: PricingPlan; index: number }) {
             }}
           >
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 5l4 4 4-4" stroke={open ? G : MUTED} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M3 5l4 4 4-4" stroke={open ? G : MUTED} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
@@ -560,7 +565,7 @@ function PricingCard({ plan, index }: { plan: PricingPlan; index: number }) {
                   <div className="w-4 h-4 flex items-center justify-center flex-shrink-0 mt-0.5"
                     style={{ background: G_DIM2, border: `1px solid ${BORDER}` }}>
                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
-                      <path d="M1 4l2 2 4-4" stroke={G} strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M1 4l2 2 4-4" stroke={G} strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
                   <span className="text-sm" style={{ fontFamily: "'DM Sans'", fontWeight: 300, color: MUTED }}>{f}</span>
@@ -588,20 +593,20 @@ function PricingCard({ plan, index }: { plan: PricingPlan; index: number }) {
                 }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.background = plan.highlighted ? G_HOVER : G
-                  ;(e.currentTarget as HTMLElement).style.color = BG
-                  ;(e.currentTarget as HTMLElement).style.boxShadow = `0 0 24px rgba(0,185,107,0.35)`
-                  ;(e.currentTarget as HTMLElement).style.border = 'none'
+                    ; (e.currentTarget as HTMLElement).style.color = BG
+                    ; (e.currentTarget as HTMLElement).style.boxShadow = `0 0 24px rgba(0,185,107,0.35)`
+                    ; (e.currentTarget as HTMLElement).style.border = 'none'
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.background = plan.highlighted ? G : 'transparent'
-                  ;(e.currentTarget as HTMLElement).style.color = plan.highlighted ? BG : TEXT
-                  ;(e.currentTarget as HTMLElement).style.boxShadow = 'none'
-                  ;(e.currentTarget as HTMLElement).style.border = plan.highlighted ? 'none' : `1.5px solid ${BORDER_STRONG}`
+                    ; (e.currentTarget as HTMLElement).style.color = plan.highlighted ? BG : TEXT
+                    ; (e.currentTarget as HTMLElement).style.boxShadow = 'none'
+                    ; (e.currentTarget as HTMLElement).style.border = plan.highlighted ? 'none' : `1.5px solid ${BORDER_STRONG}`
                 }}
               >
                 {plan.cta}
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
             </div>
@@ -884,9 +889,11 @@ function Contact() {
                       onFocus={() => setFocused(key)} onBlur={() => setFocused(null)}
                       onChange={(e) => setForm({ ...form, [key]: e.target.value })}
                       className="w-full text-sm px-4 py-3 outline-none transition-all duration-200"
-                      style={{ fontFamily: "'DM Sans'", fontWeight: 300, color: TEXT, background: BG,
+                      style={{
+                        fontFamily: "'DM Sans'", fontWeight: 300, color: TEXT, background: BG,
                         border: focused === key ? `1px solid ${G}` : `1px solid rgba(0,0,0,0.12)`,
-                        boxShadow: focused === key ? `0 0 12px rgba(0,185,107,0.1)` : 'none', borderRadius: 0 }} />
+                        boxShadow: focused === key ? `0 0 12px rgba(0,185,107,0.1)` : 'none', borderRadius: 0
+                      }} />
                   </div>
                 ))}
                 <div>
@@ -896,9 +903,11 @@ function Contact() {
                     onFocus={() => setFocused('message')} onBlur={() => setFocused(null)}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                     className="w-full text-sm px-4 py-3 outline-none resize-none transition-all duration-200"
-                    style={{ fontFamily: "'DM Sans'", fontWeight: 300, color: TEXT, background: BG,
+                    style={{
+                      fontFamily: "'DM Sans'", fontWeight: 300, color: TEXT, background: BG,
                       border: focused === 'message' ? `1px solid ${G}` : `1px solid rgba(0,0,0,0.12)`,
-                      boxShadow: focused === 'message' ? `0 0 12px rgba(0,185,107,0.1)` : 'none', borderRadius: 0 }} />
+                      boxShadow: focused === 'message' ? `0 0 12px rgba(0,185,107,0.1)` : 'none', borderRadius: 0
+                    }} />
                 </div>
                 <button type="submit" className="w-full py-4 text-sm font-bold tracking-widest uppercase transition-all duration-200"
                   style={{ fontFamily: "'Exo 2'", color: BG, background: G, border: 'none', cursor: 'pointer', letterSpacing: '0.14em', clipPath: 'polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%)' }}
