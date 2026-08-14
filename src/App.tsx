@@ -240,7 +240,7 @@ function Hero() {
                 onMouseEnter={(e) => { e.currentTarget.style.borderColor = BORDER_STRONG; e.currentTarget.style.color = G }}
                 onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.15)'; e.currentTarget.style.color = TEXT }}
               >
-                View Our Work
+                View Our Services
               </button>
             </div>
 
@@ -446,7 +446,7 @@ function ServiceCard({ service, className = '' }: { service: { num: string; titl
       <div className="flex items-start justify-between mb-6">
         <span className="text-xs font-bold tracking-widest" style={{ fontFamily: "'Exo 2'", color: `rgba(0,185,107,0.35)`, letterSpacing: '0.2em' }}>{service.num}</span>
         <div className="w-8 h-8 flex items-center justify-center" style={{ border: `1px solid ${BORDER}`, color: G }}>
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke={G} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          {/* <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke={G} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg> */}
         </div>
       </div>
       <h3 className="text-xl font-bold mb-3" style={{ fontFamily: "'Exo 2'", color: TEXT, letterSpacing: '-0.01em' }}>{service.title}</h3>
