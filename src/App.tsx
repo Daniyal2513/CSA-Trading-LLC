@@ -846,7 +846,7 @@ function Contact() {
 
             <div className="space-y-4 pt-4">
               {[
-                { icon: '◉', label: 'Email', value: 'csatradingllc.dmu@gmail.com' },
+                { icon: '◉', label: 'Email', value: 'csatradingllc.dmv@gmail.com' },
                 { icon: '◈', label: 'Location', value: '16797 Mill Station WayDumfries, VA 22025, USA' },
                 { icon: '▲', label: 'Response Time', value: 'Within 24 hours, guaranteed' },
               ].map((item) => (
